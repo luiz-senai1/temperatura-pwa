@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e2e8f0;
+}
+
+.dashboard {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+}
+
+header p {
+  color: #94a3b8;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1;
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card p {
+  font-size: 2rem;
+  margin: 10px 0 0;
+}
+
+/* GRÁFICO */
+.grafico-box {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* CONTROLE DE ENVIO */
+.envio-controle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.envio-controle button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#btnStart { background: #22c55e; }
+#btnStop { background: #ef4444; }
+
+.envio-controle #status {
+  flex: 2;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* TABELA */
+.table-container {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #020617;
+  color: #94a3b8;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background: #0f172a;
+}

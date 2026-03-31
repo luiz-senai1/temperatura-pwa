@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sensor + Dashboard de Temperatura</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <div class="dashboard">
+
+    <header>
+      <h1>🌡️ Sensor e Dashboard</h1>
+      <p>Envio e monitoramento em tempo real</p>
+    </header>
+
+    <!-- CARDS -->
+    <div class="cards">
+      <div class="card">
+        <h3>Atual</h3>
+        <p id="tempAtual">--°C</p>
+      </div>
+      <div class="card">
+        <h3>Média</h3>
+        <p id="tempMedia">--°C</p>
+      </div>
+      <div class="card">
+        <h3>Máxima</h3>
+        <p id="tempMax">--°C</p>
+      </div>
+    </div>
+
+    <!-- GRÁFICO -->
+    <div class="grafico-box">
+      <canvas id="graficoLinha"></canvas>
+    </div>
+
+    <!-- CONTROLE DE ENVIO -->
+    <div class="envio-controle">
+      <button id="btnStart">▶ Iniciar Envio</button>
+      <button id="btnStop">⏸ Parar Envio</button>
+      <span id="status">Aguardando...</span>
+    </div>
+
+    <!-- TABELA -->
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Horário</th>
+            <th>Temperatura</th>
+          </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
