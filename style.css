@@ -99,3 +99,65 @@ th, td {
 tbody tr:nth-child(even) {
   background: #0f172a;
 }
+
+/* 📱 MOBILE (até 768px) */
+@media (max-width: 768px) {
+
+  .dashboard {
+    padding: 15px;
+  }
+
+  /* Cards em coluna */
+  .cards {
+    flex-direction: column;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+  }
+
+  /* Controle de envio em coluna */
+  .envio-controle {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .envio-controle button,
+  .envio-controle #status {
+    width: 100%;
+  }
+
+  /* Tabela com scroll */
+  .table-container {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}
+
+/* 📲 TELAS MUITO PEQUENAS */
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .grafico-box {
+    padding: 15px;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+}
